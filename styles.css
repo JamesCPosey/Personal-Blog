@@ -28,6 +28,9 @@ main {
 /* Import Header CSS file to main */
 @import url("header.css");
 
+/*Import Footer CSS File */
+@import url("footer.css");
+
 /* Mobile view (up to 767px) */
 @media (max-width: 767px) {
   main {
