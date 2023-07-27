@@ -1,20 +1,78 @@
+/* Reset some default styles to start fresh */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: #f2f2f2;
-    color: #333;
+/* Set up global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #333;
 }
 
+/* Import header styles */
+@import url('header.css');
+
+/* Main content styles */
 main {
-    padding: 20px;
+  padding: 20px;
 }
-.container {
+
+/* Mobile view (up to 767px) */
+@media (max-width: 767px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Tablet view (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
 }
+
+/* Desktop view (992px and above) */
+@media (min-width: 992px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+/* Article styles */
+article {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+article p {
+  color: #555;
+  line-height: 1.6;
+}
+
+article a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+/* Import footer styles */
+@import url('footer.css');
