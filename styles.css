@@ -23,7 +23,7 @@ main {
 
 /* Mobile view (up to 767px) */
 @media (max-width: 767px) {
-  section {
+  .container {
     display: flex;
     flex-direction: column;
   }
@@ -31,7 +31,7 @@ main {
 
 /* Tablet view (768px to 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
-  section {
+  .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
@@ -40,7 +40,7 @@ main {
 
 /* Desktop view (992px and above) */
 @media (min-width: 992px) {
-  section {
+  .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
