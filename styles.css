@@ -25,6 +25,9 @@ main {
   flex: 1;
 }
 
+/* Import Header CSS file to main */
+@import url("header.css");
+
 /* Mobile view (up to 767px) */
 @media (max-width: 767px) {
   main {
