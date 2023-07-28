@@ -5,15 +5,6 @@ header {
   color: transparent;
   padding: 20px;
   flex: 0 0 15%;
-  /* Set the height to create a circular shape */
-  height: 100px;
-  /* Set the width to create a rounded box */
-  border-radius: 50px;
-  /* Apply circular gradient for the text */
-  background-image: conic-gradient(from 0.25turn, #007bff, #007bff 25%, #FF8A00 25%, #FF8A00 75%, #007bff 75%);
-  /* Ensure text is visible on the circular gradient */
-  -webkit-background-clip: text;
-  background-clip: text;
 }
 
 header h1 {
@@ -21,21 +12,3 @@ header h1 {
   font-family: Arial, sans-serif; /* Use a fallback font */
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-nav li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-nav li a:hover {
-  color: #ddd;
-}
