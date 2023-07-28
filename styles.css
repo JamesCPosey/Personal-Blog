@@ -1,9 +1,17 @@
-/* Reset some default styles to start fresh */
+/* Import Article styles */
+import url("article.css");
+
+/* Import header style */
+import url("header.css");
+
+/* Import footer style */
+import url("footer.css");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 /* Set up global styles */
 body {
@@ -99,11 +107,4 @@ main {
   max-width: 100%;
   height: auto;
 }
-/* Import Article styles */
-import url("article.css");
 
-/* Import header style */
-import url("header.css");
-
-/* Import footer style */
-import url("footer.css");
