@@ -100,10 +100,10 @@ main {
   height: auto;
 }
 /* Import Article styles */
-import url('article.css');
+import url("article.css");
 
 /* Import header style */
-import url('header.css');
+import url("header.css");
 
 /* Import footer style */
-import url('footer.css');
+import url("footer.css");
