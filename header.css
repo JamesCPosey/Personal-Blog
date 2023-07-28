@@ -10,5 +10,6 @@ header {
 header h1 {
   font-size: 32px;
   font-family: Arial, sans-serif; /* Use a fallback font */
+  font-variant-caps: all-small-caps;
 }
 
