@@ -1,22 +1,35 @@
+/* header.css */
+
 header {
-  background-color: #FF8A00;
-  color: #007BFF;
+  background-color: #FF8A00; /* Orange box color */
+  color: #007BFF; /* Complementary blue text color */
   padding: 20px;
   flex: 0 0 15%;
   /* Set the height to create a circular shape */
   height: 100px;
   /* Set the width to create a rounded box */
   border-radius: 50px;
-  /* Apply circular gradient for the text */
-  background-image: conic-gradient(from 0.25turn, #007BFF, #007BFF 25%, #FF8A00 25%, #FF8A00 75%, #007BFF 75%);
-  /* Ensure text is visible on the circular gradient */
-  -webkit-background-clip: text;
-  background-clip: text;
+  position: absolute;
+  top: 20px; /* Adjust the top position as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center the header horizontally */
 }
+
 
 header h1 {
   font-size: 32px;
+  font-weight: 600;
   font-family: Arial, sans-serif; /* Use a fallback font */
+  text-shadow: 1px 1px 1px #957dad,
+  1px 2px 1px #957dad,
+  1px 3px 1px #957dad,
+  1px 4px 1px #957dad,
+  1px 5px 1px #957dad,
+  1px 6px 1px #957dad,
+  1px 10px 5px rgba(16, 16, 16, 0.5),
+  1px 15px 10px rgba(16, 16, 16, 0.4),
+  1px 20px 30px rgba(16, 16, 16, 0.3),
+  1px 25px 50px rgba(16, 16, 16, 0.2);
 }
 
 nav ul {
@@ -36,4 +49,14 @@ nav li a {
 
 nav li a:hover {
   color: #ddd;
+}
+nav {
+  display: flex;
+  justify-content: center; /* Center navigation on tablets and mobiles */
+}
+
+@media (min-width: 768px) {
+  nav {
+    justify-content: flex-start; /* Align navigation to the left on desktops */
+  }
 }
