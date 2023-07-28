@@ -1,41 +1,11 @@
 /* Blog post styles */
 .blog-post {
-  display: flex; /* Use Flexbox to arrange text and image side by side */
+  display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: 1fr; /* Single column by default */
+  gap: 20px; /* Add some gap between rows and columns */
+  padding: 20px; /* Default padding */
   background-color: #fff;
-  padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.blog-post-content {
-  flex: 1; /* Make the content take up one half of the remaining space */
-}
-
-.blog-post h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.blog-post p {
-  color: #555;
-  line-height: 1.6;
-}
-
-.blog-post a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.blog-post a:hover {
-  text-decoration: underline;
-}
-
-.blog-post-image {
-  flex: 1; /* Make the image take up the other half of the remaining space */
-  display: flex;
-  justify-content: flex-end; /* Align the image to the right of the container */
-  align-items: center; /* Center the image vertically within the container */
-}
-
-.blog-post-image img {
-  max-width: 100%; /*
