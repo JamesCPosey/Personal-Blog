@@ -40,17 +40,20 @@ body {
 
 .blog-post p {
   line-height: 1.6;
-  color: #ffdb58; /* White text color for better contrast */
-  font-size: 18px; /* Smaller font size for paragraph text */
+  color: #34495e; /* A contrasting color to the background */
+  font-size: 20px; /* Default font size for paragraph text */
 }
 
 .blog-post a {
   color: #007bff;
   text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3); /* Add a subtle text decoration */
+  transition: border-bottom-color 0.3s ease;
 }
 
 .blog-post a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom-color: transparent; /* Remove the text decoration on hover */
 }
 
 /* Footer styles */
@@ -94,20 +97,37 @@ footer {
   background-color: #1da1f2;
 }
 
-/* Media queries for adjusting the image position */
+/* Media queries for adjusting the font size */
 
 /* For smaller screens */
 @media (max-width: 767px) {
-  .blog-post {
-    background-size: auto 90%; /* Increase the image size */
-    background-position-y: 40%; /* Adjust the vertical position */
+  .blog-post h2 {
+    font-size: 22px; /* Decrease the title font size for smaller screens */
+  }
+
+  .blog-post p {
+    font-size: 18px; /* Decrease the paragraph font size for smaller screens */
+  }
+}
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+  .blog-post h2 {
+    font-size: 24px; /* Reset the title font size for tablets and larger screens */
+  }
+
+  .blog-post p {
+    font-size: 20px; /* Reset the paragraph font size for tablets and larger screens */
   }
 }
 
 /* For larger screens */
 @media (min-width: 1200px) {
-  .blog-post {
-    background-size: auto 60%; /* Decrease the image size */
-    background-position-y: 60%; /* Adjust the vertical position */
+  .blog-post h2 {
+    font-size: 28px; /* Increase the title font size for larger screens */
+  }
+
+  .blog-post p {
+    font-size: 24px; /* Increase the paragraph font size for larger screens */
   }
 }

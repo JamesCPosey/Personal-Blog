@@ -50,13 +50,18 @@ nav li a {
 nav li a:hover {
   color: #ddd;
 }
+
 nav {
   display: flex;
   justify-content: center; /* Center navigation on tablets and mobiles */
 }
 
-@media (min-width: 768px) {
-  nav {
-    justify-content: flex-start; /* Align navigation to the left on desktops */
+@media (max-width: 767px) {
+  header {
+    text-align: center; /* Center the header content on mobile devices */
+  }
+
+  header h1 {
+    font-size: 24px; /* Decrease the font size for mobile devices */
   }
 }
