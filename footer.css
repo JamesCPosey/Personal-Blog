@@ -3,4 +3,9 @@ footer {
   padding: 10px;
   background-color: #007bff;
   color: #fff;
+  flex: 0 0 15%; /* Take up 15% of the page height, and don't grow or shrink */
+}
+
+footer p {
+  font-family: fantasy;
 }
