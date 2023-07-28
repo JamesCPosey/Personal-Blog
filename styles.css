@@ -1,8 +1,8 @@
 /* Import body styles  */
-import url("body.css");
+@import url("body.css");
 
 /* Import header style */
-import url("header.css");
+@import url("header.css");
 
 
 .container {
@@ -102,4 +102,4 @@ main {
 } 
 
 /* Import footer style */
-import url("footer.css");
+@import url("footer.css");
