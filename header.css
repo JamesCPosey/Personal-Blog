@@ -1,30 +1,41 @@
-/* Header styles */
+/* header.css */
+
 header {
-  background-color: #ff8a00;
-  color: #fff;
+  background-color: #FF8A00;
+  color: transparent;
   padding: 20px;
-  display: flex;
-  flex: 0 0 15%; /* Take up 15% of the page height, and don't grow or shrink */
-    /* Apply gradient text color for the header */
-  background: linear-gradient(to right, #5C2E00, #FF8A00);
-  /* Ensure text is visible on the gradient background */
+  flex: 0 0 15%;
+  /* Set the height to create a circular shape */
+  height: 100px;
+  /* Set the width to create a rounded box */
+  border-radius: 50px;
+  /* Apply circular gradient for the text */
+  background-image: conic-gradient(from 0.25turn, #007bff, #007bff 25%, #FF8A00 25%, #FF8A00 75%, #007bff 75%);
+  /* Ensure text is visible on the circular gradient */
   -webkit-background-clip: text;
   background-clip: text;
-  /* Make the rest of the background transparent to show the gradient through */
-  -webkit-text-fill-color: transparent;
+}
 
-}
-header::before {
-  content: ''; /* Add content to the pseudo-element */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-  background-color: #ff001a; /* Contrasting color to the text */
-  opacity: 0.7; /* Adjust the transparency of the background box */
-  z-index: -1; /* Place the pseudo-element below the text */
-}
 header h1 {
   font-size: 32px;
+  font-family: Arial, sans-serif; /* Use a fallback font */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav li a:hover {
+  color: #ddd;
 }
