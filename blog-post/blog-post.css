@@ -1,1 +1,121 @@
+/* Reset some default styles to start fresh */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 32px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav li a:hover {
+  color: #ddd;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+/* Blog post styles */
+.blog-post {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.blog-post a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Social sharing buttons */
+.social-buttons {
+  margin-top: 10px;
+}
+
+.share-btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.share-btn:hover {
+  background-color: #444;
+}
+
+/* Individual social buttons */
+.facebook-btn {
+  background-color: #1877f2;
+}
+
+.linkedin-btn {
+  background-color: #0a66c2;
+}
+
+.x-btn {
+  background-color: #1da1f2;
+}
 
