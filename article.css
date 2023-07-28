@@ -1,7 +1,3 @@
-.blog-posts {
-  flex: 1;
-}
-
 /* Blog post styles */
 .blog-post {
   display: flex; /* Use Flexbox to arrange text and image side by side */
