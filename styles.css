@@ -23,7 +23,9 @@ body {
 /* Main content styles */
 main {
   padding: 20px;
-  display: flex;
+  flex: 1; /* Take up remaining available space in the middle and stretch vertically */
+  display: flex; /* Use Flexbox for layout inside main */
+  flex-direction: column; /* Stack the sidebar and blog-posts vertically */
 }
 
 .sidebar {
