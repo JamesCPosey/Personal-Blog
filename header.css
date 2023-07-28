@@ -10,4 +10,5 @@ header {
 
 header h1 {
   font-size: 32px;
+  background-image: radial-gradient(#553c9a, #ee4b2b);
 }
