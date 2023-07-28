@@ -1,5 +1,5 @@
-/* Import Article styles  */
-import url("article.css");
+/* Import body styles  */
+import url("body.css");
 
 /* Import header style */
 import url("header.css");
@@ -12,14 +12,6 @@ import url("footer.css");
   box-sizing: border-box;
 }
 
-
-/* Set up global styles */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f2f2f2;
-  color: #333;
-}
 /* Main content styles */
 main {
   padding: 20px;
@@ -80,10 +72,10 @@ main {
     align-items: flex-start;
   }
   
-  /* .blog-post {
-    /* larger padding for bigger screen *
+   .blog-post {
+    /* larger padding for bigger screen */
     padding: 30px;
-  }*/
+  }
   .nav-button {
     background-color: #1c87c9;
     border: none;
@@ -97,8 +89,8 @@ main {
   }
 }
 
-/* .blog-post-image {
-  /* Make the image take up the other half of the available space *
+.blog-post-image {
+  /* Make the image take up the other half of the available space */
   grid-area: image;
   display: flex;
   justify-content: center;
@@ -108,5 +100,5 @@ main {
 .blog-post-image img {
   max-width: 100%;
   height: auto;
-} */
+} 
 
