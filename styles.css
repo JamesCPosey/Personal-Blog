@@ -97,7 +97,7 @@ main {
   }
 }
 
-.blog-post-image {
+/* .blog-post-image {
   /* Make the image take up the other half of the available space *
   grid-area: image;
   display: flex;
@@ -108,5 +108,5 @@ main {
 .blog-post-image img {
   max-width: 100%;
   height: auto;
-} 
+} */
 
