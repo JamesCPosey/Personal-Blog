@@ -1,4 +1,4 @@
-.main-footer {
+footer {
   text-align: center;
   padding: 10px;
   background-color: #007bff;
@@ -6,7 +6,7 @@
   flex: 0 0 15%; /* Take up 15% of the page height, and don't grow or shrink */
 }
 
-.main-footer p {
+footer p {
   font-family: fantasy;
   background-image: radial-gradient(#553c9a, #ee4b2b);
 }
