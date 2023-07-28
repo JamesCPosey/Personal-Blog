@@ -32,25 +32,25 @@ main {
   min-width: 200px;
 }
 
-.blog-post {
-  display: grid; /* Use CSS Grid for layout */
-  grid-template-columns: 1fr; /* Single column by default */
-  gap: 20px; /* Add some gap between rows and columns */
-  padding: 20px; /* Default padding */
+//*.blog-post {
+  display: grid; /* Use CSS Grid for layout *
+  grid-template-columns: 1fr; /* Single column by default *
+  gap: 20px; /* Add some gap between rows and columns *
+  padding: 20px; /* Default padding *
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* Mobile view (up to 767px) */
 @media (max-width: 767px) {
   main {
     flex-direction: column;
   }
-   .blog-post {
-      /* smaller padding for smaller screen */
+   /* .blog-post {
+      /* smaller padding for smaller screen *
     padding: 15px;
-  }
+  } */
 
   /* Center align the buttons vertically on mobile */
   .sidebar {
@@ -80,10 +80,10 @@ main {
     align-items: flex-start;
   }
   
-  .blog-post {
-    /* larger padding for bigger screen */
+  /* .blog-post {
+    /* larger padding for bigger screen *
     padding: 30px;
-  }
+  }*/
   .nav-button {
     background-color: #1c87c9;
     border: none;
@@ -98,7 +98,7 @@ main {
 }
 
 .blog-post-image {
-  /* Make the image take up the other half of the available space */
+  /* Make the image take up the other half of the available space *
   grid-area: image;
   display: flex;
   justify-content: center;
@@ -108,5 +108,5 @@ main {
 .blog-post-image img {
   max-width: 100%;
   height: auto;
-}
+} 
 
