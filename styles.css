@@ -4,8 +4,7 @@ import url("body.css");
 /* Import header style */
 import url("header.css");
 
-/* Import footer style */
-import url("footer.css");
+
 .container {
   margin: 0;
   padding: 0;
@@ -102,3 +101,5 @@ main {
   height: auto;
 } 
 
+/* Import footer style */
+import url("footer.css");
