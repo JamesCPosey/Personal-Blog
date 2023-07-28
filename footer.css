@@ -3,10 +3,35 @@ footer {
   padding: 10px;
   background-color: #007bff;
   color: #fff;
-  flex: 0 0 15%; /* Take up 15% of the page height, and don't grow or shrink */
+  flex: 0 0 15%;
+  /* Apply gradient text color for the footer */
+  background: linear-gradient(to right, #5C2E00, #FF8A00);
+  /* Ensure text is visible on the gradient background */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Make the rest of the background transparent to show the gradient through */
+  -webkit-text-fill-color: transparent;
+  /* Stick the footer to the bottom of the screen */
+  margin-top: auto;
+  position: relative; /* Required for pseudo-element positioning */
 }
 
-footer p {
-  font-family: fantasy;
+footer h3 {
+  font-family: Arial, sans-serif;
   background-image: radial-gradient(#553c9a, #ee4b2b);
+}
+
+
+footer::before {
+  content: ''; /* Add content to the pseudo-element */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent; /* Adjust the size of the tails */
+  border-right: 15px solid #FF8A00; /* Tail color and size */
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  z-index: -1; /* Place the pseudo-element below the text */
 }
