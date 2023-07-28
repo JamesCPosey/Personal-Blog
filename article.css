@@ -1,26 +1,45 @@
-}/* Article styles */
-article {
+.blog-posts {
+  flex: 1;
+}
+
+/* Blog post styles */
+.blog-post {
+  display: flex; /* Use Flexbox to arrange text and image side by side */
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-article h2 {
+.blog-post-content {
+  flex: 1; /* Make the content take up one half of the remaining space */
+}
+
+.blog-post h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-article p {
+.blog-post p {
   color: #555;
   line-height: 1.6;
 }
 
-article a {
+.blog-post a {
   color: #007bff;
   text-decoration: none;
 }
 
-article a:hover {
+.blog-post a:hover {
   text-decoration: underline;
 }
+
+.blog-post-image {
+  flex: 1; /* Make the image take up the other half of the remaining space */
+  display: flex;
+  justify-content: flex-end; /* Align the image to the right of the container */
+  align-items: center; /* Center the image vertically within the container */
+}
+
+.blog-post-image img {
+  max-width: 100%; /*
