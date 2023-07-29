@@ -20,6 +20,7 @@ body {
 
 /* Blog post styles */
 .blog-post {
+  grid-column: 1;
   background: radial-gradient(circle at center, rgba(255, 140, 0, 0.4), rgba(255, 140, 0, 0.1), transparent); /* Smoky cloud background */
   padding: 20px;
   border-radius: 5px;
@@ -41,7 +42,7 @@ body {
 .blog-post p {
   line-height: 1.6;
   color: #34495e; /* A contrasting color to the background */
-  font-size: 20px; /* Default font size for paragraph text */
+  font-size: 15px; /* Adjusted to be slightly smaller */
 }
 
 .blog-post a {
@@ -55,6 +56,14 @@ body {
   text-decoration: none;
   border-bottom-color: transparent; /* Remove the text decoration on hover */
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Two columns, 2/3 for blog post and 1/3 for author section */
+  gap: 20px;
+  max-width: 800px; /* Set a maximum width for the grid container */
+  margin: 30px auto; /* Center the grid container within the main content */
+  width: 100%; /* Make the grid container cover the horizontal length of the screen */
+}
 
 /* Footer styles */
 footer {
@@ -62,6 +71,10 @@ footer {
   padding: 10px;
   background-color: #ff8a00;
   color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 /* Social sharing buttons */
@@ -106,7 +119,7 @@ footer {
   }
 
   .blog-post p {
-    font-size: 18px; /* Decrease the paragraph font size for smaller screens */
+    font-size: 12px; /* Decrease the paragraph font size for smaller screens */
   }
 }
 
@@ -119,6 +132,14 @@ footer {
   .blog-post p {
     font-size: 20px; /* Reset the paragraph font size for tablets and larger screens */
   }
+  .author-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .author-details {
+    grid-column: span 2;
+  }
+
 }
 
 /* For larger screens */
@@ -130,4 +151,48 @@ footer {
   .blog-post p {
     font-size: 24px; /* Increase the paragraph font size for larger screens */
   }
+  .author-image {
+    text-align: left;
+  }
+
+  .author-details {
+    text-align: left;
+  }
+}
+
+.author-section {
+grid-column: 2;
+  gap: 20px;
+  max-width: 600px; /* Set a maximum width for the author's section */
+  margin: 30px auto; /* Center the author's section within the blog post */
+}
+
+.author-image {
+  text-align: center;
+}
+
+.author-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.author-details {
+  text-align: left;
+}
+
+.author-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.author-details li {
+  margin-bottom: 10px;
+}
+
+.author-bio p {
+  line-height: 1.6;
+  color: #34495e;
+  font-size: 12px;
 }
