@@ -20,7 +20,8 @@ footer {
 
 footer h3 {
   font-family: Arial, sans-serif;
-  background-image: radial-gradient(#553c9a, #ee4b2b);
+  color: #e00c0c; /* Light color to be seen at bottom*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow to the h2 element */
 }
 .fake-subscribe-button {
   display: inline-block;

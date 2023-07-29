@@ -17,9 +17,8 @@
 /* Main content styles */
 main {
   padding: 20px;
-  flex: 1; /* Take up remaining available space in the middle and stretch vertically */
   display: flex; /* Use Flexbox for layout inside main */
-  flex-direction: column; /* Stack the sidebar and blog-posts vertically */
+  gap: 20px;
 }
 
 .sidebar {
@@ -77,6 +76,7 @@ main {
    .blog-post {
     /* larger padding for bigger screen */
     padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* adjust background color */
   }
   .nav-button {
     background-color: #1c87c9;
@@ -105,6 +105,7 @@ main {
 } 
 
 .grid-container {
+  background-color: rgba(255, 255, 255, 0.9); /* adjust background color */
   display: grid;
   grid-template-columns: 1fr 2fr 1fr; /* Three columns, adjust width as needed */
   gap: 20px; /* Gap between the grid items */
@@ -169,5 +170,79 @@ main {
   color: #333; 
 }
 
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column for mobile view */
+  }
+
+  .author-card {
+    grid-row: 1; /* Place the author card in the first row for mobile view */
+    grid-column: 1; /* Place the author card in the first column for mobile view */
+  }
+
+  .fake-blog-posts {
+    grid-row: 2; /* Place the fake blog posts in the second row for mobile view */
+    grid-column: 1; /* Place the fake blog posts in the first column for mobile view */
+  }
+}
+
+/* Tablet view (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns for tablet view */
+  }
+
+  .author-card {
+    grid-row: 1; /* Place the author card in the first row for tablet view */
+    grid-column: 1 / span 2; /* Stretch the author card to cover two columns */
+  }
+
+  .fake-blog-posts {
+    grid-row: 2; /* Place the fake blog posts in the second row for tablet view */
+    grid-column: 1 / span 2; /* Stretch the fake blog posts to cover two columns */
+  }
+}
+
+/* Larger screens (1024px and above) */
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr 2fr 1fr; /* Three columns for desktop view */
+  }
+
+  .author-card {
+    grid-row: 1; /* Place the author card in the first row for desktop view */
+    grid-column: 1 / span 2; /* Stretch the author card to cover two columns */
+  }
+
+  .fake-blog-posts {
+    grid-row: 1; /* Place the fake blog posts in the first row for desktop view */
+    grid-column: 3; /* Place the fake blog posts in the third column for desktop view */
+  }
+}
+.blog-post h2 {
+  color: #222; /* Dark color for blog post title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow to the h2 element */
+}
+.blog-post p {
+  color: #444; /* Slightly lighter color for blog post content */
+}
+
+.blog-post a {
+  color: #007bff; /* Complementary color for links */
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure text contrast in the author card */
+.author-link h3 {
+  color: #222; /* Dark color for author's name */
+}
+
+/* Ensure text contrast in the fake blog posts */
+.older-post-link h3 {
+  color: #222; /* Dark color for fake blog post titles */
+}
 /* Import footer style */
 @import url("footer.css");
