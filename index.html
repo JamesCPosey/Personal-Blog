@@ -4,41 +4,48 @@
     <meta charset="UTF-8">
     <title>Personal Blog James-Posey</title>
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
     <div class="container">
-    <header>
-        <h1>KyuubiWindscar's Lair</h1>
-    </header>
-    <main>
-        <div class="sidebar">
-        <a href ="index.html" class="nav-button">Home</a>
-        <a href ="blog-post/blog-post.html" class="nav-button">Blog Post</a>
-      <!-- Add more buttons for other categories -->
+        <header>
+            <h1>KyuubiWindscar's Lair</h1>
+        </header>
+        <main>
+            <div class="sidebar">
+                <a href="index.html" class="nav-button">Home</a>
+                <a href="blog-post/blog-post.html" class="nav-button">Blog Post</a>
+                <!-- Add more buttons for other categories -->
+            </div>
+            <section class="blog-posts">
+                <article class="blog-post">
+                    <div class="grid-container">
+                        <div class="post-card">
+                            <!-- Add content for the post card here -->
+                            <img src="https://staticdelivery.nexusmods.com/mods/1704/images/79315/79315-1670093250-530994092.gif" alt="Video Game representation of author">
+                        </div>
+                        <div class="blog-post-content">
+                            <h2>Blog Post Title</h2>
+                            <p>
+                                Blog post content goes here...
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt enim nisi, in fermentum tellus suscipit eget. Phasellus rhoncus quam in libero interdum, et luctus orci fermentum. Integer luctus eros in nisi aliquam, id euismod arcu dictum. Duis ultrices mauris in sapien cursus, et lacinia turpis congue. Ut eget odio volutpat, iaculis arcu eu, auctor felis. Nulla facilisi. Praesent aliquam urna sit amet eros consectetur congue. Proin in massa eu ex pharetra maximus. Vestibulum non venenatis dui. Nullam sodales dapibus nunc, vel pellentesque justo interdum a. Maecenas nec laoreet nisi, et euismod quam. Nulla facilisi. Sed ac suscipit nulla. Suspendisse sit amet dui sit amet arcu lacinia tempus.
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                        <div class="placeholder-image">
+                            <!-- Add content for the placeholder image here -->
+                        </div>
+                    </div>
+                </article>
+                <!-- Add more articles for more blog posts -->
+            </section>
+        </main>
     </div>
-
-    <section class="blog-posts">
-      <article class="blog-post">
-        <div class="blog-post-content">
-          <h2>Blog Post Title</h2>
-          <p>
-            Blog post content goes here...
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt enim nisi, in fermentum tellus suscipit eget. Phasellus rhoncus quam in libero interdum, et luctus orci fermentum. Integer luctus eros in nisi aliquam, id euismod arcu dictum. Duis ultrices mauris in sapien cursus, et lacinia turpis congue. Ut eget odio volutpat, iaculis arcu eu, auctor felis. Nulla facilisi. Praesent aliquam urna sit amet eros consectetur congue. Proin in massa eu ex pharetra maximus. Vestibulum non venenatis dui. Nullam sodales dapibus nunc, vel pellentesque justo interdum a. Maecenas nec laoreet nisi, et euismod quam. Nulla facilisi. Sed ac suscipit nulla. Suspendisse sit amet dui sit amet arcu lacinia tempus.
-          </p>
-          <a href="#">Read more</a>
-        </div>
-        <div class="blog-post-image">
-          <img src="path-to-your-image.jpg" alt="Image description">
-        </div>
-      </article>
-      <!-- Add more articles for more blog posts -->
-    </section>
-  </main>
-    </main>
     <footer>
         <h3>General Footer</h3>
+        <div class="subscribe-section">
+            <input type="email" id="emailInput" placeholder="Enter your email">
+            <button onclick="subscribe()">Subscribe</button>
+        </div>
     </footer>
-</div>
 </body>
 </html>

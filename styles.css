@@ -4,6 +4,9 @@
 /* Import header style */
 @import url("header.css");
 
+/* Import post card for author */
+@import url("post-card.css");
+
 
 .container {
   margin: 0;
@@ -100,6 +103,24 @@ main {
   max-width: 100%;
   height: auto;
 } 
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Three columns, adjust width as needed */
+  gap: 20px; /* Gap between the grid items */
+}
+
+.post-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.placeholder-image {
+  /* Placeholder image styles */
+  opacity: 0.8; /* Adjust the opacity value as needed (0.0 to 1.0) */
+}
 
 /* Import footer style */
 @import url("footer.css");

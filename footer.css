@@ -12,26 +12,28 @@ footer {
   /* Make the rest of the background transparent to show the gradient through */
   -webkit-text-fill-color: transparent;
   /* Stick the footer to the bottom of the screen */
-  margin-top: auto;
-  position: relative; /* Required for pseudo-element positioning */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 footer h3 {
   font-family: Arial, sans-serif;
   background-image: radial-gradient(#553c9a, #ee4b2b);
 }
+.fake-subscribe-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-
-footer::before {
-  content: ''; /* Add content to the pseudo-element */
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-left: 15px solid transparent; /* Adjust the size of the tails */
-  border-right: 15px solid #FF8A00; /* Tail color and size */
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  z-index: -1; /* Place the pseudo-element below the text */
+.fake-subscribe-button:hover {
+  background-color: #0056b3;
 }
