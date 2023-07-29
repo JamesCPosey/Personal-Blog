@@ -66,6 +66,11 @@ main {
 
 /* Larger screens (768px and above) */
 @media (min-width: 768px) {
+
+  main {
+    max-width: 1200px; /* Set a maximum width for the main tag */
+    max-height: 500px;
+  }
   /* Center align the buttons vertically on larger screens */
   .sidebar {
     display: flex;
