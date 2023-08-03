@@ -175,7 +175,7 @@ main {
   color: #333; 
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .grid-container {
     grid-template-columns: 1fr; /* Single column for mobile view */
   }
@@ -192,7 +192,7 @@ main {
 }
 
 /* Tablet view (768px to 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr); /* Two equal columns for tablet view */
   }
@@ -209,7 +209,7 @@ main {
 }
 
 /* Larger screens (1024px and above) */
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .grid-container {
     grid-template-columns: 1fr 2fr 1fr; /* Three columns for desktop view */
   }
