@@ -26,16 +26,9 @@
   font-size: 14px;
 }
   @media screen and (max-width: 767px){
-    .post-card{
-      padding: 10px;
-      border-radius: 5px;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-      bottom: 35px;
-      right: 10px;
-      width: 175px;
-    }
-
     .card {
+      grid-column: 2;
+      grid-row: 2;
       border: 1px solid #ccc;
       border-radius: 8px;
       padding: 5px;

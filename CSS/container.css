@@ -10,14 +10,12 @@
 .grid-container{
     display: grid;
     height: 700px;
+    gap: 10px;
 }
 
 @media screen and (max-width: 767px) {
     .container {
         display: flex;
         justify-content: center;
-    }
-    .grid-container{
-        background-position: center center;
     }
 }
