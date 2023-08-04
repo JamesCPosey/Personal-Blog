@@ -9,8 +9,6 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-image: url('https://cdn.pixabay.com/photo/2016/12/10/19/37/koster-1898042_1280.png');
-  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
@@ -20,7 +18,7 @@ body {
 
 /* Blog post styles */
 .blog-post {
-  grid-column: 1;
+  grid-column: 2;
   background: radial-gradient(circle at center, rgba(255, 140, 0, 0.4), rgba(255, 140, 0, 0.1), transparent); /* Smoky cloud background */
   padding: 20px;
   border-radius: 5px;
@@ -59,19 +57,18 @@ body {
   border-bottom-color: transparent; /* Remove the text decoration on hover */
 }
 
+.blog-post figcaption {
+  font-style: italic;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Two columns, 2/3 for blog post and 1/3 for author section */
+  grid-template-columns: 1fr 2fr; /* Two columns, 2/3 for blog post and 1/3 for author section */
   gap: 20px;
   max-width: 800px; /* Set a maximum width for the grid container */
   margin: 30px auto; /* Center the grid container within the main content */
   width: 100%; /* Make the grid container cover the horizontal length of the screen */
-}
-
-/* Sidebar styles */
-.sidebar {
-  grid-column: 2; /* Place the sidebar in the second column */
-  max-width: 150px; /* Set a maximum width for the sidebar */
+  background-color: transparent;
 }
 
 /* Footer styles */
@@ -118,6 +115,9 @@ footer {
 .x-btn {
   background-color: #1da1f2;
 }
+.author-details {
+  color: coral;
+}
 
 /* Media queries for adjusting the font size */
 
@@ -130,10 +130,17 @@ footer {
   .blog-post p {
     font-size: 12px; /* Decrease the paragraph font size for smaller screens */
   }
+  .grid-container{
+    max-width: 45%;
+  }
+  .blog-post figure{
+    width: 100px;
+  }
+
 }
 
 /* For tablets and larger screens */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .blog-post h2 {
     font-size: 24px; /* Reset the title font size for tablets and larger screens */
   }
@@ -159,6 +166,13 @@ footer {
   .author-details {
     text-align: left;
   }
+   .grid-container{
+    max-width: 45%;
+  }
+  .blog-post figure{
+    width: 150px;
+  }
+
 }
 
 /* For larger screens */
@@ -170,4 +184,8 @@ footer {
   .blog-post p {
     font-size: 24px; /* Increase the paragraph font size for larger screens */
   }
+  .blog-post figure{
+    width: 55%;
+  }
+
 }

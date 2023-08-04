@@ -33,6 +33,7 @@ main {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 55%;
 } 
 
 /* Mobile view (up to 767px) */
@@ -94,7 +95,20 @@ main {
     width: 150px; /* Set a fixed width for larger buttons */
     margin-bottom: 15px;
   }
-}
+    .grid-container {
+    grid-template-columns: 1fr 2fr 1fr; /* Three columns for desktop view */
+  }
+
+  .author-card {
+    grid-row: 1; /* Place the author card in the first row for desktop view */
+    grid-column: 1 / span 2; /* Stretch the author card to cover two columns */
+  }
+
+  .fake-blog-posts {
+    grid-row: 1; /* Place the fake blog posts in the first row for desktop view */
+    grid-column: 3; /* Place the fake blog posts in the third column for desktop view */
+  }
+
 
 .blog-post-image {
   /* Make the image take up the other half of the available space */
@@ -175,6 +189,8 @@ main {
   color: #333; 
 }
 
+}
+
 @media screen and (max-width: 767px) {
   .grid-container {
     grid-template-columns: 1fr; /* Single column for mobile view */
@@ -210,19 +226,7 @@ main {
 
 /* Larger screens (1024px and above) */
 @media screen and (min-width: 1024px) {
-  .grid-container {
-    grid-template-columns: 1fr 2fr 1fr; /* Three columns for desktop view */
-  }
 
-  .author-card {
-    grid-row: 1; /* Place the author card in the first row for desktop view */
-    grid-column: 1 / span 2; /* Stretch the author card to cover two columns */
-  }
-
-  .fake-blog-posts {
-    grid-row: 1; /* Place the fake blog posts in the first row for desktop view */
-    grid-column: 3; /* Place the fake blog posts in the third column for desktop view */
-  }
 }
 .blog-post h2 {
   color: #222; /* Dark color for blog post title */
