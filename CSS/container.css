@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "sidebar main main"
+    "footer footer footer"
+  }
+
+  /* Mobile Screens should have all lined up */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-areas:
+        "header"
+        "nav sidebar"
+        "main"
+        "section"
+        "article"
+        "footer";
+      }
+      
+}  
