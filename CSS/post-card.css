@@ -33,4 +33,32 @@
       width: 175px;
     }
 
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 5px;
+      width: 100px; /* You can adjust the width as needed */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Styling for the card header */
+    .card-header {
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    
+    /* Styling for the card content */
+    .card-content {
+      font-size: 8px;
+      line-height: 1.5;
+    }
+    
+    /* Optional: Styling for the card footer */
+    .card-footer {
+      margin-top: 8px;
+      color: #888;
+      font-size: 8px;
+    }
+
   }
