@@ -32,30 +32,6 @@ header h1 {
   1px 25px 50px rgba(16, 16, 16, 0.2);
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-nav li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-nav li a:hover {
-  color: #ddd;
-}
-
-nav {
-  display: flex;
-  justify-content: center; /* Center navigation on tablets and mobiles */
-}
-
 @media (max-width: 767px) {
   header {
     text-align: center; /* Center the header content on mobile devices */
