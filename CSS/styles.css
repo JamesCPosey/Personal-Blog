@@ -36,6 +36,34 @@ main {
   max-width: 55%;
 } 
 
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px; /* You can adjust the width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the card header */
+.card-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* Styling for the card content */
+.card-content {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Optional: Styling for the card footer */
+.card-footer {
+  margin-top: 12px;
+  color: #888;
+  font-size: 14px;
+}
+
 /* Mobile view (up to 767px) */
 @media (max-width: 767px) {
   main {
@@ -63,10 +91,60 @@ main {
     cursor: pointer;
     margin-bottom: 10px;
   }
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    width: 100px; /* You can adjust the width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the card header */
+  .card-header {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  /* Styling for the card content */
+  .card-content {
+    font-size: 8px;
+    line-height: 1.5;
+  }
+  
+  /* Optional: Styling for the card footer */
+  .card-footer {
+    margin-top: 8px;
+    color: #888;
+    font-size: 8px;
+  }
+  .author-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f1f1f1; /* Optional: Add background color for the author section */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .author-link {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .author-link img {
+    width: 50px; /* Optional: Adjust the author image size */
+    height: 50px;
+    border-radius: 50%; /* Optional: Make the author image circular */
+  }
 }
 
 /* Larger screens (768px and above) */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
   main {
     max-width: 1200px; /* Set a maximum width for the main tag */
@@ -255,30 +333,3 @@ main {
 }
 /* Import footer style */
 @import url("footer.css");
-.card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  width: 300px; /* You can adjust the width as needed */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Styling for the card header */
-.card-header {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 12px;
-}
-
-/* Styling for the card content */
-.card-content {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/* Optional: Styling for the card footer */
-.card-footer {
-  margin-top: 12px;
-  color: #888;
-  font-size: 14px;
-}
