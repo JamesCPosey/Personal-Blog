@@ -12,13 +12,12 @@
     height: 700px;
 }
 
-.content-container{
-    height: 50px;
-}
-
 @media screen and (max-width: 767px) {
     .container {
         display: flex;
         justify-content: center;
+    }
+    .grid-container{
+        background-position: center center;
     }
 }
