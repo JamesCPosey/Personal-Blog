@@ -26,7 +26,9 @@ main{
   min-width: 20%;
 }
 
-
+.blog-post{
+  grid-column: 2;
+}
 
   .nav-button {
     background-color: #1c87c9;
@@ -76,6 +78,26 @@ footer {
 
 /* for Tablet screens */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: repeat(2, 50%);
+  }
+  .sidebar{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .older-posts{
+    grid-column: 1;
+    grid-row: 2;
+    height: 30%;
+  }
+.blog-post{
+  width: auto;
+}
+}
+/* for Desktop */
+@media screen and (min-width: 1024px) {
   main {
     display: grid;
     grid-template-columns: 20% 80%;
