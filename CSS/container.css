@@ -19,3 +19,12 @@
         justify-content: center;
     }
 }
+
+
+/* for Tablet screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .grid-container{
+        grid-column: 2;
+        grid-row: 1;
+    }
+}

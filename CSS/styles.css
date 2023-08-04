@@ -23,7 +23,7 @@ main{
   margin-top: 130px;
 }
 .sidebar {
-  min-width: 200px;
+  min-width: 20%;
 }
 
 
@@ -71,5 +71,23 @@ footer {
     grid-column: 2;
     grid-row: 3;
     align-items: center;
+  }
+}
+
+/* for Tablet screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: repeat(2, 50%);
+  }
+  .sidebar{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .older-posts{
+    grid-column: 1;
+    grid-row: 2;
+    height: 30%;
   }
 }

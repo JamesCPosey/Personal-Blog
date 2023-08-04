@@ -14,9 +14,11 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: #fff; /* White text color for better readability */
   text-align: center; /* Center the text inside the blog post */
-  max-width: 400px; /* Set a maximum width for the blog post */
+  max-width: 100%; /* Set a maximum width for the blog post */
+  max-height: 100%;
   background-size: auto 70%; /* Adjust the image size */
   background-position: center center; /* Center the image horizontally and vertically */
+  overflow: hidden;
 }
 
 .blog-post h2 {
@@ -30,6 +32,9 @@
   line-height: 1.6;
   color: #34495e; /* A contrasting color to the background */
   font-size: 15px; /* Adjusted to be slightly smaller */
+  white-space: nowrap; /* Prevent the text from wrapping */
+  overflow: hidden; /* Hide any content that overflows the element */
+  text-overflow: ellipsis; /* Display an ellipsis (...) at the end of the text if it overflows */
 }
 
 .blog-post a {
@@ -102,3 +107,16 @@ footer {
 }
 
 /* Media queries for adjusting the font size */
+@media screen and (max-width: 768px) {
+  .blog-post p {
+    white-space: normal;
+  }
+  
+}
+
+@media screen and (min-width: 1023px) {
+  .blog-post p {
+    white-space: normal;
+  }
+  
+}
