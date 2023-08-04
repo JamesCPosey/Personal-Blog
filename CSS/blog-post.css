@@ -12,11 +12,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  box-sizing: border-box;
 }
 
 /* Blog post styles */
